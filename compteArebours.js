@@ -2,18 +2,19 @@ var seconds= document.getElementById("secondes");
 var minuts= document.getElementById("minutes");
 var hours= document.getElementById("heures");
 
-var timeS=1;
+var timeS=60;
 var timerS= 0;
 
-var timeM=1;
+var timeM=0;
 var timeH=0;
 
 seconds.innerHTML= timeS;
 minuts.innerHTML = timeM;
 hours.innerHTML = timeH;
 
-
-
+document.getElementById("sec").value= "";
+document.getElementById("min").value= "";
+document.getElementById("hou").value= "";
 
 //SECONDES -COMPTE A REBOURS
 var decompteS = function () {
@@ -24,7 +25,23 @@ var decompteS = function () {
     if (timeM<=0 && timeS<=0 && timeH<=0) { //arreter le decompte des secondes si le compteur minutes est a 0 en mm tps que compteur sec
         clearTimeout(timerS);//= arreter decompte des secondes
         alert ("Finish");
+
+        timeS= "0"+ 0;
+        seconds.innerHTML= timeS;
+        document.getElementById("sec").value= "";
+
+        timeM="0"+0;
+        minuts.innerHTML= timeM;
+        document.getElementById("min").value= "";
+
+        timeH="0"+0;
+        hours.innerHTML= timeH;
+        document.getElementById("hou").value= "";
+
+        document.getElementById("start").disabled= false;
     }
+
+
     else {
 
         if (timeS <= 0) {
@@ -107,30 +124,7 @@ document.getElementById("ValidHou").addEventListener("click", function (){
 
 
 
-/*function decompteM(){
 
-    minuts.innerHTML= timeM--;
-
-    if(timeM==0){
-        timeH--;
-    }
-}
-
-//MINUTES
-
-
-
-
-
-
-//HOURS
-
-/*var timeH=24;
-
-var decompteH= function(){
-   hours.innerHTML= timeH--;
-
-};*/
 
 
 
