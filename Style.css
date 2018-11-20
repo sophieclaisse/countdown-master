@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+
+#reset, #stop, #start {
+    width: 100px;
+    height: 30px;
+}
+
+#ValidMin, #ValidSec {
+    width: 50px;
+    height: 30px;
+}
+
