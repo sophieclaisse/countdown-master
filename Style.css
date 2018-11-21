@@ -1,10 +1,23 @@
 body{
     text-align: center;
+    background-color: darkred;
+    color: white;
+}
+
+h1{
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 #reset, #stop, #start {
     width: 100px;
     height: 30px;
+    background-color: darkred;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    font-weight: bold;
 }
 
 #ValidMin, #ValidSec {
@@ -12,3 +25,33 @@ body{
     height: 30px;
 }
 
+#heures, #minutes, #secondes{
+    font-size: 50px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 90px;
+    margin: 20px;
+}
+
+
+#reset {
+    margin-top: 100px;
+}
+
+#stop, #start {
+    margin-bottom: 100px;
+}
+
+span {
+    font-size: 50px;
+}
+
+#ValidSec, #ValidMin, #ValidHou {
+    background-color: darkred;
+    border: 2px solid white;
+    border-radius: 90px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
