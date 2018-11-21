@@ -80,12 +80,12 @@ var decompteS = function () {
     else{
         minuts.innerHTML= timeM;
     }
+    document.getElementById("start").enabled= true;
 
 };
 
 document.getElementById("start").addEventListener("click", function (){
     decompteS();
-    document.getElementById("start").disabled= true;
     document.getElementById("stop").enabled= true;
 });
 
